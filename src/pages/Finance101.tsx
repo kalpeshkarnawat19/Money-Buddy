@@ -107,7 +107,7 @@ export default function Finance101() {
                 </div>
               </CardHeader>
              <CardContent>
-  <div className="text-muted-foreground text-sm leading-relaxed">
+  <div className="text-muted-foreground font-semibold text-sm leading-relaxed">
     <p>{article.description}</p>
 
     {/* Only show the link if it exists */}

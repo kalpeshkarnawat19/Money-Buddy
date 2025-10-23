@@ -1,8 +1,11 @@
-This is our project for Hackathon #HackTheBank organised by pfi-soc (PICT Finance Society)
-Our Problem statement was **To build a Personal Finance Management Tool**     
+This is our project for Hackathon 
+- #HackTheBank organised by **pfi-soc (PICT Finance Society)**
+# Problem statement : Personal Finance Management Tool  
+- Develop a simple and engaging personal finance app that helps users understand and manage their money better. The app should guide the users in tracking income and expenses while teaching key financial concepts in an interactive, easy-to-use way.      
 
-# MoneyBuddy 
-MoneyBuddy is a personal finance web application designed to help users **set, track, and achieve their financial goals**. From budgeting and savings to investment fundamentals, MoneyBuddy provides a simple and interactive way to improve financial literacy and take control of your finances.
+# SOLUTION :- MoneyBuddy 
+- WebApp : https://money-buddy-psi.vercel.app/
+- MoneyBuddy is a personal finance web application designed to help users **set, track, and achieve their financial goals**. From budgeting and savings to investment fundamentals, MoneyBuddy provides a simple and interactive way to improve financial literacy and take control of your finances.
 
 ---
 
@@ -49,26 +52,27 @@ MoneyBuddy is a personal finance web application designed to help users **set, t
 ## Installation
 
 1. Clone the repository:
-   git clone https://github.com/kalpeshkarnawat19/Money-Buddy.git
-   cd moneybuddy
+   - git clone https://github.com/kalpeshkarnawat19/Money-Buddy.git
+   - cd moneybuddy
 
 2. Install all the Dependencies:
-   Bash
-   npm install 
+   - Bash
+   - npm install 
 
 3. Run the Server
-   Bash
-   npm run dev
+   - Bash
+   - npm run dev
 
 
 #### About Us
 We are currently First Year Students at PICT Pune
 
 1. Web App Developed by     : Kalpesh Karnawat
-   Web App repo : https://github.com/kalpeshkarnawat19/Money-Buddy.git
-
+   - Web App repo : https://github.com/kalpeshkarnawat19/Money-Buddy.git
+   - Website is also Deployed Using Vercel : https://money-buddy-psi.vercel.app/
+ 
 2. Android App Developed by : Kavin Sharma 
-   Android App repo : https://github.com/Kavin-0307/FinanceApp_Java.git
+   - Android App repo : https://github.com/Kavin-0307/FinanceApp_Java.git
 
 3. PowerPoint Presentation Designed and Presented by : Jay Kelani and Yosha Chauhan 
    

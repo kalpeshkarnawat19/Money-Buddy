@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Plus, Target, Trash2, TrendingUp } from "lucide-react";
 import { toast } from "sonner";
+import Typewriter from "typewriter-effect";
 
 interface Goal {
   id: string;
@@ -92,7 +93,22 @@ export default function Goals() {
         <h1 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-primary bg-clip-text text-transparent">
           Goals & Planning
         </h1>
-        <p className="text-muted-foreground">Set and track your financial goals</p>
+        <p className="text-muted-foreground">
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString("Set and track your financial goals")
+                .pauseFor(2000)
+                .start();
+            }}
+            options={{
+              cursor: "",  // remove blinking cursor
+              loop: true,
+              deleteSpeed:100,
+              delay: 100,   // adjust typing speed
+            }}
+          />
+        </p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
@@ -184,9 +200,8 @@ export default function Goals() {
               return (
                 <Card
                   key={goal.id}
-                  className={`shadow-card hover:shadow-hover transition-all ${
-                    isComplete ? "border-success" : ""
-                  }`}
+                  className={`shadow-card hover:shadow-hover transition-all ${isComplete ? "border-success" : ""
+                    }`}
                 >
                   <CardHeader>
                     <div className="flex items-start justify-between">

@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { MessageSquare, Clock, Sparkles } from "lucide-react";
+import Typewriter from "typewriter-effect";
 
 export default function ExpertAdvice() {
   return (
@@ -8,7 +9,22 @@ export default function ExpertAdvice() {
         <h1 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-primary bg-clip-text text-transparent">
           Expert Advice
         </h1>
-        <p className="text-muted-foreground">Get personalized financial guidance</p>
+        <p className="text-muted-foreground">
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString("Get personalized financial guidance")
+                .pauseFor(2000)
+                .start();
+            }}
+            options={{
+              cursor: "",  // remove blinking cursor
+              loop: true,
+              deleteSpeed:100,
+              delay: 100,   // adjust typing speed
+            }}
+          />
+          </p>
       </div>
 
       <div className="max-w-2xl mx-auto">
@@ -18,7 +34,24 @@ export default function ExpertAdvice() {
               <MessageSquare className="w-12 h-12 text-primary-foreground" />
             </div>
             
-            <h2 className="text-3xl font-bold mb-4">Coming Soon!</h2>
+            <h2 className="text-3xl font-bold mb-4">
+              
+               <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString("Coming Soon..!")
+                .pauseFor(2000)
+                .start();
+            }}
+            options={{
+              cursor: "|",  // remove blinking cursor
+              loop: false,
+              autoStart:true,
+              deleteSpeed: 0,
+              delay: 100,   // adjust typing speed
+            }}
+          />
+              </h2>
             
             <p className="text-muted-foreground text-lg mb-8 max-w-md mx-auto">
               We're building an AI-powered expert advice system to provide personalized financial guidance tailored to your unique situation.

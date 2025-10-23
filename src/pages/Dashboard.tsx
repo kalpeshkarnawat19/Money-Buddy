@@ -8,6 +8,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Upload, Plus, TrendingUp, TrendingDown, DollarSign, Trash2 } from "lucide-react";
 import { toast } from "sonner";
 import * as XLSX from "xlsx";
+import Typewriter from "typewriter-effect";
 
 type TransactionType = "income" | "expense";
 
@@ -106,7 +107,22 @@ export default function Dashboard() {
         <h1 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-primary bg-clip-text text-transparent">
           Dashboard
         </h1>
-        <p className="text-muted-foreground">Track your income and expenses</p>
+           <p className="text-muted-foreground">
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString("Track Your Income and Expenses")
+                .pauseFor(4000)
+                .start();
+            }}
+            options={{
+              cursor: "",  
+              loop: true,
+              deleteSpeed:100,
+              delay: 100,   
+            }}
+          />
+        </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
